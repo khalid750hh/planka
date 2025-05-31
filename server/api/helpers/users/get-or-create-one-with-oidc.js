@@ -78,7 +78,7 @@ module.exports = {
       throw 'missingValues';
     }
 
-    let role = User.Roles.BOARD_USER;
+    let role = sails.config.custom.defaultUserRole ? sails.config.custom.defaultUserRole : User.Roles.BOARD_USER;
     if (!sails.config.custom.oidcIgnoreRoles) {
       const claimsRoles = claims[sails.config.custom.oidcRolesAttribute];
 

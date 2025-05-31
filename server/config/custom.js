@@ -10,6 +10,7 @@
 
 const { URL } = require('url');
 const sails = require('sails');
+const User = require('../api/models/User')
 
 const version = require('../version');
 
@@ -59,6 +60,8 @@ module.exports.custom = {
   s3SecretAccessKey: process.env.S3_SECRET_ACCESS_KEY,
   s3Bucket: process.env.S3_BUCKET,
   s3ForcePathStyle: process.env.S3_FORCE_PATH_STYLE === 'true',
+
+  defaultUserRole: User.Roles.includes(process.env.DEFAULT_USER_ROLE) ? process.env.DEFAULT_USER_ROLE : "boardUser",
 
   oidcIssuer: process.env.OIDC_ISSUER,
   oidcClientId: process.env.OIDC_CLIENT_ID,

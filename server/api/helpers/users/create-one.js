@@ -37,6 +37,10 @@ module.exports = {
       values.username = values.username.toLowerCase();
     }
 
+    if (sails.config.custom.defaultUserRole) {
+      values.role = sails.config.custom.defaultUserRole;
+    }
+
     let user;
     try {
       user = await User.qm.createOne({

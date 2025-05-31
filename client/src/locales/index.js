@@ -3,7 +3,7 @@
  * Licensed under the Fair Use License: https://github.com/plankanban/planka/blob/master/LICENSE.md
  */
 
-import arYE from './ar-YE';
+import arSA from './ar-SA';
 import bgBG from './bg-BG';
 import csCZ from './cs-CZ';
 import daDK from './da-DK';
@@ -34,7 +34,7 @@ import zhCN from './zh-CN';
 import zhTW from './zh-TW';
 
 const locales = [
-  arYE,
+  arSA,
   bgBG,
   csCZ,
   daDK,

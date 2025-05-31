@@ -1,8 +1,8 @@
 import login from './login';
 
 export default {
-  language: 'ar-YE',
-  country: 'ye',
+  language: 'ar-SA',
+  country: 'sa',
   name: 'العربية',
   embeddedLocale: login,
 };

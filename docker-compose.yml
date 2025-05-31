@@ -63,6 +63,10 @@ services:
       # - S3_BUCKET=
       # - S3_FORCE_PATH_STYLE=true
 
+      # Optinally set a default role for new users
+      # Default value is boardUser
+      # - DEFAULT_USER_ROLE = boardUser
+
       # - OIDC_ISSUER=
       # - OIDC_CLIENT_ID=
       # - OIDC_CLIENT_SECRET=

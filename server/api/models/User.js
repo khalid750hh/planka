@@ -34,7 +34,7 @@ const ProjectOrders = {
 };
 
 const LANGUAGES = [
-  'ar-YE',
+  'ar-SA',
   'bg-BG',
   'cs-CZ',
   'da-DK',

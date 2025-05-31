@@ -133,6 +133,10 @@ persistence:
   accessMode: ReadWriteOnce
   size: 10Gi
 
+## Default user role upon creation
+## Default value is boardUser
+defaultUserRole: ""
+
 ## OpenID Identity Management configuration
 ##
 ## Example:
